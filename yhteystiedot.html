@@ -101,3 +101,75 @@ rel="stylesheet">
 
 </body>
 </html>
+
+<div class="contact-form">
+
+  <h3>Pyydä tarjous</h3>
+
+  <form
+  action="https://formsubmit.co/tanja.tihverainen@gmail.com"
+  method="POST">
+
+    <!-- Estää roskapostia -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Success sivu -->
+    <input
+    type="hidden"
+    name="_next"
+    value="https://example.com/kiitos.html">
+
+    <input
+    type="text"
+    name="name"
+    placeholder="Nimi"
+    required>
+
+    <input
+    type="email"
+    name="email"
+    placeholder="Sähköposti"
+    required>
+
+    <input
+    type="tel"
+    name="phone"
+    placeholder="Puhelinnumero">
+
+    <select name="service" required>
+
+      <option value="">
+        Valitse palvelu
+      </option>
+
+      <option value="Vedeneristys">
+        Vedeneristys
+      </option>
+
+      <option value="Laatoitus">
+        Laatoitus
+      </option>
+
+      <option value="Kylpyhuoneremontti">
+        Kylpyhuoneremontti
+      </option>
+
+      <option value="Muu">
+        Muu
+      </option>
+
+    </select>
+
+    <textarea
+    name="message"
+    placeholder="Kerro projektista..."
+    rows="6"
+    required></textarea>
+
+    <button type="submit" class="btn">
+      Lähetä tarjouspyyntö
+    </button>
+
+  </form>
+
+</div>
